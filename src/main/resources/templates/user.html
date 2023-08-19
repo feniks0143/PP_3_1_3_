@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h2>My info</h2>
+<div>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Last Name</th>
+            <th>Ability</th>
+            <th>Alias</th>
+            <th>Username</th>
+        </tr>
+        <tr>
+            <td th:utext="${user.getName()}"></td>
+            <td th:utext="${user.getLastName()}"></td>
+            <td th:utext="${user.getAbility()}"></td>
+            <td th:utext="${user.getAlias()}"></td>
+            <td th:utext="${user.getUsername()}"></td>
+        </tr>
+    </table>
+    <br>
+    <input type="button" value="I'm an admin" onclick="window.location.href = '/admin'">
+    <br>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Sign out">
+    </form>
+</div>
+</body>
+</html>
