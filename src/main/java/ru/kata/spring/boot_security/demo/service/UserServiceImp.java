@@ -99,11 +99,7 @@ public class UserServiceImp implements UserService {
         } else {
             user.setRoles(updateUser.getRoles());
         }
-
-        updateUser.setName(user.getName());
         updateUser.setLastName(user.getLastName());
-        updateUser.setAbility(user.getAbility());
-        updateUser.setAlias(user.getAlias());
         updateUser.setUsername(user.getUsername());
         updateUser.setRoles(user.getRoles());
 

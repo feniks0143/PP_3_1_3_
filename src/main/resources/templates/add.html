@@ -9,17 +9,8 @@
 <br>
 <form th:method="POST" th:action="@{/admin}" th:object="${user}">
     <div>
-        <label for="name">Name</label>
-        <input type="text" th:field="*{name}" id="name">
-        <br>
         <label for="lastName">Last Name</label>
         <input type="text" th:field="*{lastName}" id="lastName">
-        <br>
-        <label for="ability">Ability</label>
-        <input type="text" th:field="*{ability}" id="ability">
-        <br>
-        <label for="alias">Alias</label>
-        <input type="text" th:field="*{alias}" id="alias">
         <br>
         <label for="username">Username</label>
         <input type="text" th:field="*{username}" id="username">

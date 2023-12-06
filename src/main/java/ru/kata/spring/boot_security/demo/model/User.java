@@ -15,17 +15,8 @@ public class User implements UserDetails {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name")
-    private String name;
-
-    @Column(name = "lastName")
+    @Column(name = "last_name")
     private String lastName;
-
-    @Column(name = "ability")
-    private String ability;
-
-    @Column(name = "alias")
-    private String alias;
 
     @Column(unique = true, name = "username")
     private String username;
